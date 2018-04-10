@@ -1,12 +1,13 @@
 {
-  "name": "fc-server",
+  "name": "sw-push-server",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "build": "gulp scripts",
-    "watch": "gulp watch && npm run start",
-    "start": "node dist/index.js"
+    "watch": "gulp watch",
+    "start": "node dist/index.js",
+    "start-build": "npm run build && npm run start"
   },
   "devDependencies": {
     "@types/body-parser": "^1.16.8",
