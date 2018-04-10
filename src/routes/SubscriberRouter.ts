@@ -37,10 +37,11 @@ export class SubscriberRouter {
     }
 
     public sendAll(req, res) {
+
         const notificationPayload = {
             "notification": {
-                "title": "FABERNOVEL CODE PWA",
-                "body": "Notification MDR",
+                "title": req.body.title,
+                "body": req.body.body,
                 "icon": "assets/icon-128x128.png",
                 "vibrate": [100, 50, 100],
                 "data": {
